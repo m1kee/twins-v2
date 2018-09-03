@@ -2,11 +2,27 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Angular 6 Template</title>
+  <title>Twins - Chat Online</title>
   <base href="/">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+  <script src="https://www.gstatic.com/firebasejs/5.4.2/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyBq01PvX37qnVC-DZX6er5NxpxfYCfzs4M",
+      authDomain: "twins-angular.firebaseapp.com",
+      databaseURL: "https://twins-angular.firebaseio.com",
+      projectId: "twins-angular",
+      storageBucket: "twins-angular.appspot.com",
+      messagingSenderId: "556918084334"
+    };
+    console.log('firebase config:', config);
+    firebase.initializeApp(config);
+    console.log('firebase app running');
+  </script>
 </head>
 <body>
   <app-root></app-root>
